@@ -27,6 +27,7 @@ Install the required Python libraries with `pip` or `pip3`:
 pip install scapy
 pip install pygeoip
 pip install easygui
+```
 
 Additionally, download the GeoLiteCity.dat file from MaxMind and place it in the same directory as the script.
 How It Works
@@ -37,7 +38,7 @@ How It Works
     KML Generation: The script generates a KML file containing the geolocated IP addresses and paths between them.
     Google Maps Visualization: The generated KML file can be uploaded to Google Maps for visualizing the traffic on a map.
 
-Usage
+## Usage
 
 1. Clone this repository to your local machine:
 git clone https://github.com/your-username/network-traffic-visualization.git
