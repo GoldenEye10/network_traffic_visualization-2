@@ -1,6 +1,6 @@
 # Network Traffic Visualization Tool
 
-This tool provides a way to visualize network traffic flows by extracting source and destination IP addresses from `.pcap` files. It integrates the **Scapy** library for packet capture, **PyGeoIP** for geolocation, and generates a **KML** file to visualize the traffic on **Google Maps**.
+The purpose of this project is to develop a network traffic visualization tool that integrates Wireshark for packet capture, Python for data processing, and Google Maps for visualization by extracting source and destination IP addresses from `.pcap` files. It integrates the **Scapy** library to extract source and destination IP from packets, **PyGeoIP** To map IP addresses to geographical locations coordinates, and generates a **KML** file to visualize the traffic on **Google Maps**.
 
 The tool identifies the geographical locations of IP addresses and color-codes traffic paths based on the continent. It is useful for network analysts, incident responders, and security professionals to analyze network traffic, detect anomalies, and map geolocated network flows.
 
@@ -10,7 +10,6 @@ The tool identifies the geographical locations of IP addresses and color-codes t
 - **Geo-location**: Maps IP addresses to their geographical locations using the **GeoLiteCity.dat** database.
 - **KML Generation**: Generates a KML file for visualizing network traffic on Google Maps.
 - **Continent-based Color Coding**: Uses different colors for network traffic based on the continent of the IP address (North America, South America, Europe, Asia, Africa, Oceania).
-- **Error Handling**: Handles various errors like missing data or invalid packets.
 
 ## Requirements
 
@@ -22,10 +21,12 @@ The tool identifies the geographical locations of IP addresses and color-codes t
 
 ### Install Required Libraries
 
-Install the required Python libraries with `pip`:
+Install the required Python libraries with `pip` or `pip3`:
 
 ```bash
-pip install scapy pygeoip easygui
+pip install scapy
+pip install pygeoip
+pip install easygui
 
 Additionally, download the GeoLiteCity.dat file from MaxMind and place it in the same directory as the script.
 How It Works
