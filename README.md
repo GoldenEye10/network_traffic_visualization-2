@@ -41,7 +41,7 @@ How It Works
 ## Usage
 
 1. Clone this repository to your local machine:
-git clone https://github.com/your-username/network-traffic-visualization.git
+git clone https://github.com/GoldenEye10/network_traffic_visualization-2.git
 
 2. Navigate to the directory where the script is located:
 cd network-traffic-visualization
